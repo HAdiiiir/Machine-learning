@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Room Physician Notes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #000;
+            padding-bottom: 10px;
+        }
+        
+        .form-section {
+            border: 1px solid #000;
+            margin-bottom: 15px;
+            padding: 10px;
+        }
+        
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        
+        .pupil-scale {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin: 15px 0;
+        }
+        
+        .pupil {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #000;
+        }
+        
+        .scale-box {
+            border: 1px solid #000;
+            padding: 10px;
+            margin: 5px;
+        }
+        
+        .checkbox-group {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+        
+        th, td {
+            border: 1px solid #000;
+            padding: 5px;
+            text-align: center;
+        }
+        
+        .page-number {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .input-line {
+            border-bottom: 1px solid #000;
+            min-width: 100px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="patient-info">
+            <p>Patient Name: <span class="input-line"></span></p>
+            <div class="checkbox-group">
+                Gender: 
+                <label><input type="checkbox"> Male</label>
+                <label><input type="checkbox"> Female</label>
+            </div>
+            <p>Medical Record Number: <span class="input-line"></span></p>
+            <p>Date of Birth: ___/___/___</p>
+            <p>Unit/Department: <span class="input-line"></span></p>
+        </div>
+        <div class="logo">
+            <!-- Logo placeholder -->
+        </div>
+        <div class="title">
+            <h1>General Authority for Healthcare</h1>
+            <p>Governorate: <span class="input-line"></span></p>
+            <p>Hospital: <span class="input-line"></span></p>
+            <p>Date: ___/___/___</p>
+        </div>
+    </div>
+
+    <h2>Emergency Room Physician Notes</h2>
+    
+    <div class="form-section">
+        <h3>Emergency Room Physician Notes (1)</h3>
+        
+        <div class="examination">
+            <h4>EXAMINATION:</h4>
+            <div class="grid-3">
+                <p>BP: ____/____ </p>
+                <p>Pulse: ____ /min</p>
+                <p>RR: ____ /min</p>
+                <p>Temp: ____ °C</p>
+            </div>
+        </div>
+
+        <div class="neurological-section">
+            <h4>NEUROLOGICAL</h4>
+            <div class="scales">
+                <div class="scale-box">
+                    <h5>OPEN</h5>
+                    <p>Spontaneously - 4</p>
+                    <p>To Speech - 3</p>
+                    <p>To Pain - 2</p>
+                    <p>No Eye Opening - 1</p>
+                    <p>Closed/Swelling - 0</p>
+                </div>
+                
+                <div class="scale-box">
+                    <h5>VERBAL</h5>
+                    <p>Oriented - 5</p>
+                    <p>Confused - 4</p>
+                    <p>Inappropriate Speech - 3</p>
+                    <p>Vocalization - 2</p>
+                    <p>No Vocalization - 1</p>
+                    <p>Trach/Endo - T</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="review-systems">
+            <h4>Review of Systems</h4>
+            
+            <div class="general">
+                <h5>GENERAL</h5>
+                <div class="checkbox-group">
+                    <label><input type="checkbox"> cooperative</label>
+                    <label><input type="checkbox"> agitated</label>
+                    <label><input type="checkbox"> drowsy</label>
+                    <label><input type="checkbox"> irritable</label>
+                    <label><input type="checkbox"> restless</label>
+                    <label><input type="checkbox"> listless</label>
+                </div>
+            </div>
+
+            <div class="respiratory">
+                <h5>RESPIRATORY</h5>
+                <div class="checkbox-group">
+                    <label><input type="checkbox"> patient</label>
+                    <label><input type="checkbox"> ETT - size</label>
+                    <label><input type="checkbox"> oral/nasal airway</label>
+                    <label><input type="checkbox"> BVM</label>
+                </div>
+                
+                <div class="checkbox-group">
+                    <h6>Rhythm:</h6>
+                    <label><input type="checkbox"> regular</label>
+                    <label><input type="checkbox"> irregular</label>
+                </div>
+                
+                <div class="checkbox-group">
+                    <h6>Depth:</h6>
+                    <label><input type="checkbox"> normal</label>
+                    <label><input type="checkbox"> shallow</label>
+                    <label><input type="checkbox"> deep</label>
+                </div>
+            </div>
+
+            <div class="gi-section">
+                <h5>G.I.</h5>
+                <div class="checkbox-group">
+                    <h6>Abdomen:</h6>
+                    <label><input type="checkbox"> soft</label>
+                    <label><input type="checkbox"> firm</label>
+                    <label><input type="checkbox"> distended</label>
+                    <label><input type="checkbox"> tender</label>
+                </div>
+                
+                <div class="checkbox-group">
+                    <h6>Bowel Sounds:</h6>
+                    <label><input type="checkbox"> present</label>
+                    <label><input type="checkbox"> absent</label>
+                    <label><input type="checkbox"> hyperactive</label>
+                </div>
+            </div>
+
+            <div class="gu-section">
+                <h5>G.U.</h5>
+                <div class="checkbox-group">
+                    <label><input type="checkbox"> dysuria</label>
+                    <label><input type="checkbox"> hematuria</label>
+                    <label><input type="checkbox"> frequency</label>
+                    <label><input type="checkbox"> anuria</label>
+                </div>
+                
+                <div class="checkbox-group">
+                    <h6>Urine color:</h6>
+                    <label><input type="checkbox"> normal</label>
+                    <label><input type="checkbox"> dark</label>
+                    <label><input type="checkbox"> dilute</label>
+                    <label><input type="checkbox"> other</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-number">
+        Page 1|2
+        <br>
+        15/10/2020
+        <br>
+        MR-Med-01
+    </div>
+</body>
+</html>

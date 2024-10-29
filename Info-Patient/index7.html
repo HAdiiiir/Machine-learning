@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dietary Assessment Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #000;
+            padding-bottom: 10px;
+        }
+        
+        .patient-info {
+            border: 1px solid #000;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        
+        .logo-section {
+            text-align: center;
+        }
+        
+        .hospital-info {
+            border: 1px solid #000;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: right;
+        }
+        
+        .assessment-section {
+            border: 1px solid #000;
+            margin: 10px 0;
+            padding: 15px;
+        }
+        
+        .checkbox-group {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 10px 0;
+        }
+        
+        .lab-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin: 15px 0;
+        }
+        
+        .input-group {
+            margin: 5px 0;
+        }
+        
+        .input-line {
+            border-bottom: 1px solid #000;
+            min-width: 100px;
+            display: inline-block;
+        }
+        
+        .page-number {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="patient-info">
+            <p>Patient Name: <span class="input-line"></span></p>
+            <div class="checkbox-group">
+                Gender: 
+                <label><input type="checkbox"> Male</label>
+                <label><input type="checkbox"> Female</label>
+            </div>
+            <p>Medical Number: <span class="input-line"></span></p>
+            <p>Date of Birth: ___/___/___</p>
+            <p>Unit/Department: <span class="input-line"></span></p>
+        </div>
+        
+        <div class="logo-section">
+            <!-- Hospital Logo -->
+        </div>
+        
+        <div class="hospital-info">
+            <h1>General Authority for Health Care</h1>
+            <p>Governorate: <span class="input-line"></span></p>
+            <p>Hospital: <span class="input-line"></span></p>
+            <p>Date: ___/___/___</p>
+        </div>
+    </div>
+
+    <div class="assessment-section">
+        <div class="checkbox-group">
+            <label>Dehydration: 
+                <input type="checkbox" checked> No
+                <input type="checkbox"> Yes: <span class="input-line"></span>
+            </label>
+            <label>Hair: 
+                <input type="checkbox"> Normal
+                <input type="checkbox"> Lost Hair: <span class="input-line"></span>
+            </label>
+        </div>
+
+        <div class="checkbox-group">
+            <label>Major Burn: 
+                <input type="checkbox" checked> No
+                <input type="checkbox"> Yes: <span class="input-line"></span>
+            </label>
+            <label>Multiple Trauma: 
+                <input type="checkbox"> No
+                <input type="checkbox"> Yes: <span class="input-line"></span>
+            </label>
+        </div>
+
+        <div class="checkbox-group">
+            <label>Loss of Subcutaneous Fat (below eyes, triceps, biceps, etc):
+                <input type="checkbox"> No
+                <input type="checkbox"> Some Areas
+                <input type="checkbox"> All Areas: <span class="input-line"></span>
+            </label>
+        </div>
+
+        <div class="checkbox-group">
+            <label>Muscle Wasting (scapula, ribs, quadriceps, interosseous, etc):
+                <input type="checkbox"> No
+                <input type="checkbox"> Some Areas
+                <input type="checkbox"> All Areas: <span class="input-line"></span>
+            </label>
+        </div>
+    </div>
+
+    <div class="assessment-section">
+        <h3>Laboratory Investigations</h3>
+        <div class="lab-grid">
+            <div class="input-group">
+                <label>Sodium: <input type="text"></label>
+            </div>
+            <div class="input-group">
+                <label>Potassium: <input type="text"></label>
+            </div>
+            <div class="input-group">
+                <label>Chloride: <input type="text"></label>
+            </div>
+            <div class="input-group">
+                <label>Hemoglobin: <input type="text"></label>
+            </div>
+            <div class="input-group">
+                <label>Hematocrit: <input type="text"></label>
+            </div>
+            <div class="input-group">
+                <label>BUN: <input type="text"></label>
+            </div>
+            <div class="input-group">
+                <label>Glucose (Fasting): <input type="text" value="---"></label>
+            </div>
+            <div class="input-group">
+                <label>Glucose (Random): <input type="text" value="---"></label>
+            </div>
+            <div class="input-group">
+                <label>Cholesterol: <input type="text" value="---"></label>
+            </div>
+        </div>
+    </div>
+
+    <div class="assessment-section">
+        <h3>Final Dietary Assessment</h3>
+        <div class="checkbox-group">
+            <div>
+                <p>Inadequate Intake of:</p>
+                <label><input type="checkbox"> Carbohydrates</label>
+                <label><input type="checkbox"> Proteins</label>
+                <label><input type="checkbox"> Fats</label>
+                <label><input type="checkbox"> Liquids</label>
+            </div>
+        </div>
+        
+        <div class="checkbox-group">
+            <div>
+                <p>Excessive Intake of:</p>
+                <label><input type="checkbox"> Carbohydrates</label>
+                <label><input type="checkbox"> Proteins</label>
+                <label><input type="checkbox"> Fats</label>
+                <label><input type="checkbox"> Liquids</label>
+            </div>
+        </div>
+
+        <div class="checkbox-group">
+            <div>
+                <p>Body Mass Index (BMI):</p>
+                <label><input type="checkbox"> Severe Underweight</label>
+                <label><input type="checkbox"> Underweight</label>
+                <label><input type="checkbox"> Normal</label>
+                <label><input type="checkbox"> Overweight</label>
+                <label><input type="checkbox"> Pre-obese</label>
+                <label><input type="checkbox"> Obese Class I</label>
+                <label><input type="checkbox"> Obese Class II</label>
+                <label><input type="checkbox"> Obese Class III</label>
+            </div>
+        </div>
+
+        <div class="checkbox-group">
+            <div>
+                <p>Malnutrition Status:</p>
+                <label><input type="checkbox"> No Malnutrition</label>
+                <label><input type="checkbox"> Moderate</label>
+                <label><input type="checkbox"> Severe</label>
+                <label><input type="checkbox"> Global</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="assessment-section">
+        <h3>Dietary Care Plan</h3>
+        <div class="checkbox-group">
+            <div>
+                <p>Diet Consistency (for oral diet):</p>
+                <label><input type="checkbox" checked> Normal</label>
+                <label><input type="checkbox"> Semi-Solid</label>
+                <label><input type="checkbox"> Soft</label>
+                <label><input type="checkbox"> Liquid Soft</label>
+                <label><input type="checkbox"> Liquid</label>
+            </div>
+        </div>
+
+        <div class="checkbox-group">
+            <div>
+                <p>Mode of Feeding:</p>
+                <label><input type="checkbox"> NGT</label>
+                <label><input type="checkbox"> Gastrostomy</label>
+                <label><input type="checkbox"> IV Fluids</label>
+                <label><input type="checkbox"> Total Parenteral Nutrition</label>
+            </div>
+        </div>
+
+        <div class="checkbox-group">
+            <div>
+                <p>Type of Diet:</p>
+                <label><input type="checkbox"> Renal</label>
+                <label><input type="checkbox"> Diabetic</label>
+                <label><input type="checkbox"> Normal</label>
+                <label><input type="checkbox"> Other: <span class="input-line"></span></label>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <p>Calories:</p>
+            <label>Carbohydrates: <input type="text">%</label>
+            <label>Proteins: <input type="text">%</label>
+            <label>Fats: <input type="text">%</label>
+            <label>Total: <input type="text">Kcal</label>
+        </div>
+
+        <div class="checkbox-group">
+            <div>
+                <p>Calories Type:</p>
+                <label><input type="checkbox" checked> Low Caloric</label>
+                <label><input type="checkbox"> Normal Caloric</label>
+                <label><input type="checkbox"> High Caloric</label>
+            </div>
+        </div>
+
+        <div class="checkbox-group">
+            <div>
+                <p>Salts:</p>
+                <label><input type="checkbox"> No Salt</label>
+                <label><input type="checkbox" checked> Low Salt</label>
+                <label><input type="checkbox"> Normal Salt</label>
+            </div>
+        </div>
+
+        <div class="checkbox-group">
+            <div>
+                <p>Fats:</p>
+                <label><input type="checkbox"> No Fat</label>
+                <label><input type="checkbox" checked> Low Fat</label>
+                <label><input type="checkbox"> Normal Fat</label>
+            </div>
+        </div>
+
+        <div class="checkbox-group">
+            <div>
+                <p>Proteins:</p>
+                <label><input type="checkbox"> Normal Protein</label>
+                <label><input type="checkbox" checked> Low Protein</label>
+                <label><input type="checkbox"> High Protein</label>
+            </div>
+        </div>
+
+        <div class="checkbox-group">
+            <div>
+                <p>Carbohydrates:</p>
+                <label><input type="checkbox" checked> No Sugars (Diabetic)</label>
+                <label><input type="checkbox"> Normal Sugar</label>
+            </div>
+        </div>
+
+        <div class="checkbox-group">
+            <div>
+                <p>Minerals:</p>
+                <div>
+                    <p>Potassium:</p>
+                    <label><input type="checkbox"> Low Potassium</label>
+                    <label><input type="checkbox"> High Potassium</label>
+                </div>
+                <div>
+                    <p>Calcium:</p>
+                    <label><input type="checkbox"> Low Calcium</label>
+                    <label><input type="checkbox" checked> High Calcium</label>
+                </div>
+                <div>
+                    <p>Phosphorous:</p>
+                    <label><input type="checkbox"> Low Phosphorous</label>
+                    <label><input type="checkbox"> High Phosphorous</label>
+                </div>
+                <div>
+                    <p>Iron:</p>
+                    <label><input type="checkbox" checked> Low Iron</label>
+                    <label><input type="checkbox"> High Iron</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <p>Liquids / Fluids:</p>
+            <label>Daily Intake of: <input type="text"> ml</label>
+            <label>Food Supplements: 
+                <input type="checkbox"> No
+                <input type="checkbox"> Yes: <span class="input-line"></span>
+            </label>
+        </div>
+
+        <div class="input-group">
+            <p>NGT Feeding Formula:</p>
+            <label>Rate: <input type="text"></label>
+            <label>Protein: <input type="text"></label>
+            <label>H₂O Flush: <input type="text"></label>
+        </div>
+
+        <div class="input-group">
+            <p>Meal Distribution:</p>
+            <label>Breakfast: <input type="text">Kcal</label>
+            <label>Lunch: <input type="text">Kcal</label>
+            <label>Dinner: <input type="text">Kcal</label>
+            <label>Snacks: <input type="text">Kcal</label>
+        </div>
+    </div>
+
+    <div class="page-number">
+        Page 2|2
+        <br>
+        15/10/2020
+        <br>
+        MR-Med-24
+    </div>
+</body>
+</html>

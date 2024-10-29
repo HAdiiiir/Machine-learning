@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Room Physician Notes (2)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #000;
+            padding-bottom: 10px;
+        }
+        
+        .form-section {
+            border: 1px solid #000;
+            margin-bottom: 15px;
+            padding: 10px;
+        }
+        
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        
+        .checkbox-group {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 5px 0;
+        }
+        
+        .input-line {
+            border-bottom: 1px solid #000;
+            min-width: 100px;
+            display: inline-block;
+        }
+        
+        .signature-section {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        
+        .page-number {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="barcode">
+            <p>MOHAMMED ABDELMONEN ALY ABOSALEM</p>
+            <p>M 21 Y 10 M 02 D 24/08/2024</p>
+        </div>
+        <div class="logo">
+            <!-- Logo placeholder -->
+        </div>
+        <div class="title">
+            <h1>General Authority for Health Care</h1>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <h2>Emergency Room Physician Notes (2)</h2>
+        
+        <div class="grid-2">
+            <div class="circulation-section">
+                <h3>CIRCULATION</h3>
+                
+                <div class="checkbox-group">
+                    <h4>Rhythm:</h4>
+                    <label><input type="checkbox"> regular</label>
+                    <label><input type="checkbox"> irregular</label>
+                </div>
+                
+                <div class="checkbox-group">
+                    <h4>Volume:</h4>
+                    <label><input type="checkbox"> normal</label>
+                    <label><input type="checkbox" checked> weak</label>
+                    <label><input type="checkbox"> bounding</label>
+                </div>
+                
+                <div class="checkbox-group">
+                    <h4>Skin signs:</h4>
+                    <label><input type="checkbox"> warm</label>
+                    <label><input type="checkbox" checked> cold</label>
+                    <label><input type="checkbox"> hot</label>
+                    <label><input type="checkbox"> dry</label>
+                    <label><input type="checkbox"> wet</label>
+                    <label><input type="checkbox"> pale</label>
+                    <label><input type="checkbox"> flushed</label>
+                    <label><input type="checkbox" checked> jaundiced</label>
+                    <label><input type="checkbox"> cyanotic</label>
+                </div>
+                
+                <div class="checkbox-group">
+                    <h4>Skin turgid:</h4>
+                    <label><input type="checkbox"> normal</label>
+                    <label><input type="checkbox"> decreased</label>
+                    <label><input type="checkbox"> tenting</label>
+                </div>
+                
+                <div class="checkbox-group">
+                    <h4>Mucous membranes:</h4>
+                    <label><input type="checkbox" checked> moist</label>
+                    <label><input type="checkbox"> dry</label>
+                </div>
+                
+                <div class="checkbox-group">
+                    <h4>Cap refill:</h4>
+                    <label><input type="checkbox"> < 3 sec</label>
+                    <label><input type="checkbox" checked> > 3 sec</label>
+                </div>
+            </div>
+
+            <div class="gyne-section">
+                <h3>GYNE</h3>
+                <p>Pregnancy # <span class="input-line"></span> term # <span class="input-line"></span></p>
+                <p>Miscarriage # <span class="input-line"></span> FHR # <span class="input-line"></span></p>
+                
+                <div class="checkbox-group">
+                    <label><input type="checkbox"> Discharge</label>
+                    <label><input type="checkbox"> abd pain</label>
+                </div>
+                
+                <div class="checkbox-group">
+                    <label><input type="checkbox"> Show</label>
+                    <label><input type="checkbox"> contractions</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="laboratory-section">
+            <h3>Laboratory:</h3>
+            <p>CBC/ PT: PTT <span class="input-line"></span></p>
+            
+            <h3>X-ray:</h3>
+            <p>ABDOMINAL & PELVIC MRI WITH CONTRAST</p>
+            
+            <h3>Others:</h3>
+            <span class="input-line"></span>
+        </div>
+
+        <div class="diagnosis-section">
+            <h3>Provisional diagnosis:</h3>
+            <p>Abdominal Pain</p>
+            
+            <h3>Consulting other specialties:</h3>
+            <p>No</p>
+            
+            <h3>Final Diagnosis:</h3>
+            <p>Abdominal Pain</p>
+            
+            <h3>Prescription:</h3>
+            <p>attachment</p>
+        </div>
+
+        <div class="end-service-section">
+            <h3>End of service:</h3>
+            <div class="checkbox-group">
+                <div>
+                    <label><input type="checkbox"> Admission to regular room</label>
+                    <label><input type="checkbox"> Referral</label>
+                </div>
+                <div>
+                    <label><input type="checkbox"> Admission to ICU</label>
+                    <label><input type="checkbox" checked> Discharging at home</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="signature-section">
+            <div>
+                <p>ER Physician Name: Hassan Mohamed</p>
+            </div>
+            <div>
+                <p>Signature: ___________</p>
+            </div>
+            <div>
+                <p>Date: 15/7/2024 Time: 10:00</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-number">
+        Page 2|2
+        <br>
+        15/10/2020
+        <br>
+        MR-Med-01
+    </div>
+</body>
+</html>

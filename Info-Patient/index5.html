@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Results Flow Sheet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #000;
+            padding-bottom: 10px;
+        }
+        
+        .barcode-section {
+            border: 1px solid #000;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        
+        .logo-section {
+            text-align: center;
+        }
+        
+        .hospital-info {
+            border: 1px solid #000;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: right;
+        }
+        
+        .results-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        .results-table th,
+        .results-table td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+        
+        .category {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            padding: 10px 0;
+            font-weight: bold;
+            background-color: #f5f5f5;
+        }
+        
+        .page-number {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .input-line {
+            border-bottom: 1px solid #000;
+            min-width: 100px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="barcode-section">
+            <p>MOHAMMED ABDELMONEN ALY ABOSALEM</p>
+            <p>M 21 Y 11 M 07 D 22/08/2024</p>
+        </div>
+        
+        <div class="logo-section">
+            <!-- Hospital Logo -->
+            <div class="logo-placeholder" style="width: 100px; height: 100px; margin: 0 auto;">
+                <!-- Logo would go here -->
+            </div>
+        </div>
+        
+        <div class="hospital-info">
+            <h1>General Authority for Health Care</h1>
+            <p>Governorate: <span class="input-line"></span></p>
+            <p>Hospital: <span class="input-line"></span></p>
+            <p>Date: ___/___/___</p>
+        </div>
+    </div>
+
+    <h2>Lab Results Flow Sheet</h2>
+
+    <table class="results-table">
+        <tr>
+            <th>Category</th>
+            <th>Test</th>
+            <th>15/9/2023</th>
+            <th>/</th>
+            <th>/</th>
+            <th>/</th>
+            <th>/</th>
+            <th>/</th>
+            <th>/</th>
+            <th>/</th>
+            <th>/</th>
+            <th>/</th>
+        </tr>
+        <tr>
+            <td rowspan="5" class="category">CBC</td>
+            <td>Wbcs</td>
+            <td contenteditable="true"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Rbcs</td>
+            <td contenteditable="true"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Hb (Gm%)</td>
+            <td contenteditable="true">12.2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Hct(%)</td>
+            <td contenteditable="true"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Platelets</td>
+            <td contenteditable="true"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan="6" class="category">Coagulation</td>
+            <td>PT</td>
+            <td contenteditable="true">122</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>PC</td>
+            <td contenteditable="true"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>INR</td>
+            <td contenteditable="true"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>PTT</td>
+            <td contenteditable="true">144</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Total Protein</td>
+            <td contenteditable="true"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Albumin (Mg%)</td>
+            <td contenteditable="true"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan="5" class="category">Liver</td>
+            <td>T. Bilirubin</td>
+            <td contenteditable="true"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>D. Bilirubin</td>
+            <td contenteditable="true"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ALT (SGPT)</td>
+            <td contenteditable="true"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>AST (SGOT)</td>
+            <td contenteditable="true"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ALP</td>
+            <td contenteditable="true"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan="6" class="category">Kidney</td>
+            <td>BUN</td>
+            <td contenteditable="true"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Creatinine</td>
+            <td contenteditable="true"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Uric Acid</td>
+            <td contenteditable="true"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Na</td>
+            <td contenteditable="true"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>K</td>
+            <td contenteditable="true"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Cl</td>
+            <td contenteditable="true"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan="4" class="category">Thyroid</td>
+            <td>T3</td>
+            <td contenteditable="true"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>T4</td>
+            <td contenteditable="true"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>TSH</td>
+            <td contenteditable="true"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Anti TPO</td>
+            <td contenteditable="true"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <div class="page-number">Page 1 of 1</div>
+</body>
+</html>
